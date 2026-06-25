@@ -1,0 +1,10 @@
+System.IndexOutOfRangeException: Age
+   at Microsoft.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at Microsoft.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at Microsoft.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at WinFormsCRUD.Script.Component.Profile.ProfileRepository.<>c.<GetAllProfile>b__1_0(SqlDataReader reader) in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Script\Component\Profile\ProfileRepository.cs:line 46
+   at WinFormsCRUD.Script.Component.Core.ProcedureRepository.ExecuteStoredProcedure[T](String storedProcedure, Func`2 mapFunction, SqlParameter[] parameters) in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Script\Component\Core\ProcedureRepository.cs:line 34
+   at WinFormsCRUD.Script.Component.Profile.ProfileRepository.GetAllProfile() in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Script\Component\Profile\ProfileRepository.cs:line 45
+   at WinFormsCRUD.Script.Component.Profile.ProfileService.GetProfile() in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Script\Component\Profile\ProfileService.cs:line 20
+   at WinFormsCRUD.Script.Component.Profile.ProfileController..ctor(Form1 mainForm, ProfileService profileService, EventSubscriptionManager subcriptionManager) in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Script\Component\Profile\ProfileController.cs:line 29
+   at WinFormsCRUD.Program.Main() in C:\Users\johnrey.casingal\source\repos\WinFormsCRUD\WinFormsCRUD\Program.cs:line 28
